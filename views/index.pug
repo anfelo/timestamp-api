@@ -1,8 +1,26 @@
 doctype html
 html(lang='en')
 	head
-		title Timestamp API
+		title Timestamp-ms API
 		link(rel='stylesheet', href='/static/stylesheets/style.css')
 	body
 		header
-			h1 Freecodecamp Project: timestamp-microservice	API
+			h1 FreeCodeCamp Project: timestamp-microservice	API
+		section.main-wrapper
+			.description
+				h2 Description:
+				p This is an API that serves a timestamp json object with unix time and human readable date
+			.instructions
+				h2 Instructions:
+				ol
+					li Pass a string as a parameter to the URL, the paramenter should be a unix timestamp or a human readable date (See Examples).
+					li If the string passed is valid, the API returns a json object with a "unix" time property and a "natural" date property.
+					li If the string passed is NOT valid, the API returns a null value for each of the properties of the json object.
+			.examples
+				h2 Examples:
+				p https://timestamp-ms.herokuapp.com/December%2015,%202015
+				p https://timestamp-ms.herokuapp.com/1450137600
+				h2 Output:
+				p { "unix": 1450137600, "natural": "December 15, 2015" }
+		footer
+			p &copy;2017 by anfelo
