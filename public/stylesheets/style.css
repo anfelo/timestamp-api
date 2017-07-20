@@ -28,6 +28,11 @@ header h1 {
 	margin: auto;
 }
 
+header a {
+	text-decoration: none;
+	color: #39add1;
+}
+
 .main-wrapper {
 	width: 80%;
 	margin: auto;
